@@ -12,7 +12,7 @@ public class Jedi extends Ser {
 	}
 
 	public int getPercentualPazInterna() {
-		return percentualRaiva;
+		return porcentagemPazInterna;
 	}
 	public boolean isTelepatia() {
 		return telepatia;

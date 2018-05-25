@@ -4,8 +4,8 @@ public abstract class Sith extends Ser {
 	boolean telecinese = false;
 	boolean persuasao = false;
 	
-	public Sith(String nomeNovo, boolean telepatia, boolean telecinese, boolean persuasao) {
-		super(nomeNovo);
+	public Sith(String nomeNovo, boolean telepatia, boolean telecinese, boolean persuasao, int sabre, int forca) {
+		super(nomeNovo, sabre, forca);
 		this.telepatia = telepatia;
 		this.telecinese = telecinese;
 		this.persuasao = persuasao;

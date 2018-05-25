@@ -1,14 +1,27 @@
-public class Jedi extends Ser {
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class Jedi extends Ser {
     int porcentagemPazInterna;
     boolean telepatia = false;
 	boolean telecinese = false;
     boolean persuasao = false;
-    
-    public Jedi(String nomeNovo, boolean telepatia, boolean telecinese, boolean persuasao) {
-		super(nomeNovo);
+	private List<Habilidades> listHab = new ArrayList<>();
+	
+    public Jedi(String nome, int porcentagem, boolean telepatia, boolean telecinese, boolean persuasao, int sabre, int forca) {
+    	super(nome, sabre, forca);	
 		this.telepatia = telepatia;
 		this.telecinese = telecinese;
 		this.persuasao = persuasao;
+		this.porcentagemPazInterna = porcentagem;
+	}
+
+	public List<Habilidades> getListHab() {
+		return listHab;
+	}
+
+	public void setListHab(List<Habilidades> listHab) {
+		this.listHab = listHab;
 	}
 
 	public int getPercentualPazInterna() {

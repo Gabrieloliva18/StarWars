@@ -1,6 +1,6 @@
-public  class ataqueForca {
+public class ataqueForca {
 	
-	//arremessa o oponente com a força
+	//arremessa o oponente com a forca
 	public void arremessar() {
 		
 	}

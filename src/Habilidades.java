@@ -4,6 +4,8 @@ public class Habilidades {
 	private int dano;
 	private int prioridade;
 	private String impressao;
+	private boolean sabre;
+	private boolean forca;
 	
 	public String getNome() {
 		return nome;
@@ -28,5 +30,26 @@ public class Habilidades {
 	}
 	public void setPrioridade(int prioridade) {
 		this.prioridade = prioridade;
+	}
+	
+	public boolean isSabre() {
+		return sabre;
+	}
+	public void setSabre(boolean sabre) {
+		this.sabre = sabre;
+	}
+	public boolean isForca() {
+		return forca;
+	}
+	public void setForca(boolean forca) {
+		this.forca = forca;
+	}
+	public Habilidades(String nome, int dano, int prioridade, String impressao, boolean sabre, boolean forca) {
+		setNome(nome);
+		setDano(dano);
+		setPrioridade(prioridade);
+		setImpressao(impressao);
+		setSabre(sabre);
+		setForca(forca);
 	}
 }
